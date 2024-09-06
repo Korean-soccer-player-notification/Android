@@ -19,6 +19,9 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "Football_Notification"
 include(":app")
- 
+
+include(":core:designsystem")
+include(":core:model")
