@@ -1,4 +1,4 @@
-package com.example.football_notification.ui.theme
+package com.example.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

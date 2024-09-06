@@ -1,6 +1,6 @@
 [versions]
-agp = "8.5.2"
-kotlin = "2.0.0"
+androidGradlePlugin = "8.5.2"
+kotlin = "2.0.20"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -12,17 +12,15 @@ gmsPlugin = "4.4.2"
 firebaseBom = "33.2.0"
 appcompat = "1.7.0"
 material = "1.12.0"
-
 gradleDependencyGraphGeneratorPlugin = "0.8.0"
-
-hilt = "2.49"
-coil = "2.2.2"
-coroutines = "1.7.3"
+hilt = "2.51.1"
+coil = "2.6.0"
+coroutines = "1.8.0"
 lifecycle = "2.8.5"
 orbit = "4.5.0"
 workmanager = "2.9.1"
-robolectric = "4.10"
-ksp = "2.0.0-1.0.24"
+robolectric = "4.12.2"
+ksp = "2.0.20-1.0.24"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -78,15 +76,17 @@ robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "
 broadcast-receiver = { group = "androidx.localbroadcastmanager", name = "localbroadcastmanager", version = "1.1.0" }
 
 [plugins]
-android-application = { id = "com.android.application", version.ref = "agp" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 gms = { id = "com.google.gms.google-services", version.ref = "gmsPlugin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-android-library = { id = "com.android.library", version.ref = "agp" }
-
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 
 [bundles]
 firebase = [
